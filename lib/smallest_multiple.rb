@@ -15,7 +15,7 @@ def multiple_range(n, start, stop)
 end
 
 def smallest_multiple(range)
-    i = range[1]
+    i = range[1] ** 2
     until multiple_range(i, range[0], range[1])
         i += 1
     end
