@@ -55,7 +55,7 @@ end
 
 def prime_smallest_multiple(range)
     i = range[1] ** 2
-    until !prime?(i) && prime_multiple_range(i, range[0], range[1])
+    until prime_multiple_range(i, range[0], range[1])
         i += 1
     end
     return i
